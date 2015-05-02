@@ -30,12 +30,16 @@ This project presents a minimal setup for Hoplon using boot2.
     ```
     You should see a popup on the browser.
 
+4. If you edit and save a file, the task will recompile the code and reload the
+   browser to show the updated version.
+
 ### Production
 1. Run the `prod` task. In a terminal run:
     ```bash
     $ boot prod
     ```
 
-2. The compiled files will be on the `target/` directory. This will use advanced compilation and prerender the html.
+2. The compiled files will be on the `target/` directory. This will use
+   advanced compilation and prerender the html.
 
 [boot]: https://github.com/boot-clj/boot#install
