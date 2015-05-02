@@ -16,9 +16,7 @@ This will give you a  Hoplon development setup with:
 - audible warning for compilation success or failures
 - auto reload the html page on changes
 - Clojurescript REPL
-
 2. Open the generated file on `target/index.html` on your browser.
-
 3. To use the Clojurescript REPL on another terminal run:
 ```bash
 $ boot repl -c
@@ -35,7 +33,6 @@ You should see a popup on the browser.
 ```bash
 $ boot prod
 ```
-
 2. The compiled files will be on the `target/` directory. This will use advanced compilation and prerender the html.
 
 [boot]: https://github.com/boot-clj/boot#install
