@@ -1,15 +1,15 @@
 (set-env!
-  :dependencies  '[[adzerk/boot-cljs          "0.0-2814-3"]
-                   [adzerk/boot-cljs-repl     "0.1.9"]
-                   [adzerk/boot-reload        "0.2.6"]
-                   [tailrecursion/boot-hoplon "0.1.0-SNAPSHOT"]
-                   [tailrecursion/hoplon      "6.0.0-SNAPSHOT"]]
-  :source-paths   #{"src"})
+  :dependencies '[[adzerk/boot-cljs          "0.0-3308-0"]
+                  [adzerk/boot-reload        "0.3.0"]
+                  [org.clojure/clojurescript "0.0-3308"]
+                  [org.clojure/clojure       "1.7.0"]
+                  [tailrecursion/boot-hoplon "0.1.0"]
+                  [tailrecursion/hoplon      "6.0.0-alpha1"]]
+  :source-paths #{"src"})
 
 (require
   '[adzerk.boot-cljs          :refer [cljs]]
   '[adzerk.boot-reload        :refer [reload]]
-  '[adzerk.boot-cljs-repl     :refer [cljs-repl start-repl]]
   '[tailrecursion.boot-hoplon :refer [hoplon prerender]])
 
 (deftask dev
@@ -20,7 +20,6 @@
     (speak)
     (hoplon)
     (reload)
-    (cljs-repl)
     (cljs)))
 
 (deftask prod
