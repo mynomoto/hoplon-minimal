@@ -9,10 +9,10 @@
   :source-paths #{"src"})
 
 (require
-  '[adzerk.boot-cljs   :refer [cljs]]
-  '[adzerk.boot-cljs-repl    :refer [cljs-repl start-repl]]
-  '[adzerk.boot-reload :refer [reload]]
-  '[hoplon.boot-hoplon :refer [hoplon prerender]])
+  '[adzerk.boot-cljs      :refer [cljs]]
+  '[adzerk.boot-cljs-repl :refer [cljs-repl start-repl]]
+  '[adzerk.boot-reload    :refer [reload]]
+  '[hoplon.boot-hoplon    :refer [hoplon prerender]])
 
 (deftask dev
   "Build hoplon-minimal for local development."
